@@ -48,7 +48,7 @@ class EmailController extends Controller
 		}
 		//Se a flag for do caso 1,usamos a funçao Sort() para ordenar o array que foi salvo anteriormente 
 		if($varOpt==1){
-			$emailObj = new Email();
+			$emailObj = new EmailBranch();
 			//Salvamos o array ordenado e escrevemos no arquivo dessa forma
 			$sortedArray=$emailObj->sort($arrayAux);
 			foreach($sortedArray as $iterator){
